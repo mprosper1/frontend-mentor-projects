@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](./product_card_desktop.jpg)
-![Mobile View](./mobile-r.jpg)
+![Desktop View](product_card_desktop.jpg)
+![Mobile View](mobile-r.jpg)
 
 ### Links
 
