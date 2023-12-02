@@ -7,5 +7,5 @@ Below is the list of all challenges, hosted in github
 - [nft-card-preview](https://mprosper1.github.io/frontend-mentor-projects/nft-preview-card-component/)
 - [order-summary-component](https://mprosper1.github.io/frontend-mentor-projects/order-summary-component/)
 - [product-preview-card](https://mprosper1.github.io/frontend-mentor-projects/product-view-card/)
-- [QR-code component](#the-challenge)
+- [QR-code component](https://mprosper1.github.io/frontend-mentor-projects/qr-code-card/)
 - [stats-preview-card](#screenshot)
