@@ -29,8 +29,8 @@ body::before {
   /* background-color: red; */
   height: 100%;
   position: absolute;
-  top: 15%;
-  right: 60%;
+  top: -35%;
+  right: 5%;  
   background-image: url(images/bg-pattern-top.svg);
   background-size: contain;
   background-repeat: no-repeat;
