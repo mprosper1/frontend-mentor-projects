@@ -8,4 +8,4 @@ Below is the list of all challenges, hosted in github
 - [order-summary-component](https://mprosper1.github.io/frontend-mentor-projects/order-summary-component/)
 - [product-preview-card](https://mprosper1.github.io/frontend-mentor-projects/product-view-card/)
 - [QR-code component](https://mprosper1.github.io/frontend-mentor-projects/qr-code-card/)
-- [stats-preview-card](#screenshot)
+- [stats-preview-card](https://mprosper1.github.io/frontend-mentor-projects/stats-preview/)
