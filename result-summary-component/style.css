@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  --font-family-1: "Hanken Grotesk", sans-serif;
+
+  /* colors */
+  /* ### Primary */
+
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-1);
+  background-color: #000;
+  color: var(--White);
+  font-size: 1.4rem;
+}
+
+.container {
+  /* text-align: center; */
+  margin: 3% auto;
+  height: 50rem;
+  width: 25rem;
+  background-color: var(--White);
+}
+
+.container-01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25rem;
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  /* border: 2px solid red; */
+  border-radius: 2rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.heading {
+  font-size: 1.6rem;
+  color: var(--Light-lavender);
+  font-weight: 800;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10%; */
+  height: 10rem;
+  width: 10rem;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+}
+
+.circle-heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.circle-text {
+  font-size: 1.2rem;
+  color: var(--Light-lavender);
+  font-weight: 500;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--Light-lavender);
+}
+
+.container-02 {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: var(--White);
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.sub-heading-02 {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--Dark-gray-blue);
+}
+
+.reaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+li.childs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+  height: 3.4rem;
+  border-radius: 0.4rem;
+  padding: 0 1.4rem;
+}
+
+.special-01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.childs:nth-child(1) {
+  color: var(--Light-red);
+  background-color: hsl(0, 100%, 67%, 0.06);
+}
+
+.childs:nth-child(2) {
+  color: var(--Orangey-yellow);
+  background-color: hsl(39, 100%, 56%, 0.06);
+}
+
+.childs:nth-child(3) {
+  color: var(--Green-teal);
+  background-color: hsl(166, 100%, 37%, 0.06);
+}
+
+.childs:nth-child(4) {
+  color: var(--Cobalt-blue);
+  background-color: hsl(234, 85%, 45%, 0.06);
+}
+
+.icon {
+  /* padding: 0; */
+  margin-right: 1rem;
+}
+
+.special {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  text-align: end;
+  color: var(--Dark-gray-blue);
+}
+
+.btn {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--Dark-gray-blue);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+a {
+  color: var(--White);
+  text-decoration: none;
+}
+.btn:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.number {
+  color: var(--Dark-gray-blue);
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #fff;
+  }
+  .container {
+    display: flex;
+    height: 30rem;
+    width: 45rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-top: 20vh;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container-01 {
+    width: 50%;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  .container-02 {
+    width: 50%;
+    height: 100%;
+    padding: 2rem 1.8rem;
+    gap: 2rem;
+  }
+}
