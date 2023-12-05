@@ -12,3 +12,4 @@ Below is the list of all challenges, hosted in github
 - [Profile-card-component](https://mprosper1.github.io/frontend-mentor-projects/profile-card-component/)
 - [Result-summary-component](https://mprosper1.github.io/frontend-mentor-projects/result-summary-component/)
 - [3-column-preview-card-component](https://mprosper1.github.io/frontend-mentor-projects/3-column-preview-card-component/)
+- [huddle-landing-page](https://mprosper1.github.io/frontend-mentor-projects/huddle-landing-page/)
