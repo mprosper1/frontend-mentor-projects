@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --font-family-1: "Poppins", sans-serif;
+  --font-family-2: "Open Sans", sans-serif;
+
+  /* colors */
+  /* ### Primary */
+
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+
+  /* ## Gradients */
+
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  /* background-color: var(--Violet); */
+  background: linear-gradient(
+      to bottom,
+      hsla(257, 40%, 49%, 0.5),
+      hsla(257, 40%, 49%, 0.9)
+    ),
+    url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 110vh;
+  color: var(--White);
+}
+
+header {
+  /* border: 1px solid red; */
+  padding-top: 30px;
+  margin: auto;
+  margin-top: 3rem;
+  min-width: 32rem;
+  max-width: 35rem;
+  padding: 0 2rem;
+}
+.logo-img {
+  width: 120px;
+}
+
+main {
+  min-width: 32rem;
+  max-width: 50rem;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  font-family: var(--font-family-1);
+}
+
+.container {
+  margin: 0 auto;
+  /* height: 100vh; */
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  padding: 3rem;
+}
+
+.child_container-01 {
+  width: 300px;
+  height: 20rem;
+  background-image: url(images/illustration-mockups.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child_container-02 {
+  text-align: center;
+}
+
+.heading {
+  /* text-align: center; */
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.text {
+  /* text-align: center; */
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: var(--font-family-2);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--Violet);
+  padding: 8px 64px;
+  border-radius: 100px;
+  display: inline-block;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* width: 80%; */
+  background-color: var(--White);
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 5rem;
+}
+
+.btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: var(--White);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 2rem;
+}
+
+.icon {
+  outline: 1px solid #fff;
+  width: 3rem;
+  height: 3rem;
+  padding: 7px;
+  fill: #fff;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  fill: var(--Soft-Magenta);
+  background-color: black;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    margin: 0 auto;
+    /* background-color: var(--Violet); */
+    background: linear-gradient(
+        to right,
+        hsla(257, 40%, 49%, 0.5),
+        hsla(257, 40%, 49%, 1)
+      ),
+      url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 110vh;
+    color: var(--White);
+    overflow: hidden;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+  header {
+    text-align: start;
+    min-width: 970px;
+    /* border: 2px solid red; */
+  }
+
+  main {
+    min-width: 1024px;
+  }
+
+  .child_container-01 {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 100%;
+    width: 50%;
+  }
+
+  .child_container-02 {
+    text-align: start;
+    padding: 3rem;
+    height: 100%;
+    width: 50%;
+  }
+
+  .btn {
+    margin-bottom: 15rem;
+  }
+
+  footer {
+    margin-left: 25rem;
+    /* text-align: end; */
+    /* align-items: end; */
+  }
+}
