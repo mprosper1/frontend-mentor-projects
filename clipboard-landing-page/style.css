@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --font-family-1: "Bai Jamjuree", sans-serif;
+
+  /* colors */
+  /* ### Primary */
+
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+
+  /* ## Gradients */
+
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-1);
+  color: var(--Dark-Grayish-Blue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 32rem;
+  /* border: 2px solid red; */
+  text-align: center;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 28rem;
+  background-image: url(images/bg-header-mobile.png);
+  background-size: cover;
+  /* border: 2px solid red; */
+}
+
+header img {
+  width: 10rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.first-text {
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 6rem;
+}
+
+.button-section button {
+  padding: 1rem 7rem;
+  background-color: var(--Strong-Cyan);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  border-bottom: 2px solid rgba(1, 97, 97, 0.8);
+  cursor: pointer;
+}
+
+.button-section button:nth-child(2) {
+  background-color: var(--Light-Blue);
+  border-bottom: 2px solid rgba(3, 13, 102, 0.8);
+}
+
+.sub-heading {
+  font-size: 2rem;
+  padding: 0 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.second-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.desktop-part img {
+  width: 24rem;
+  margin-bottom: 3rem;
+}
+
+.quick-heading {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.quick-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.down {
+  margin-bottom: 10rem;
+}
+
+.access-part {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+.access-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+
+.tablet img {
+  width: 24rem;
+  margin-bottom: 3rem;
+}
+
+.workflow-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+
+.workflow-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+}
+
+.icon-part img {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+
+.heading-part {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.text-part {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+
+.logo-section img {
+  width: 10rem;
+  margin-bottom: 3rem;
+}
+
+.logo-section {
+  margin-bottom: 5rem;
+}
+
+.last-section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.last-section-text {
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.last-section {
+  margin-bottom: 10rem;
+}
+
+footer {
+  background-color: hsla(202, 11%, 66%, 0.2);
+  width: 100%;
+  padding: 3rem;
+}
+
+.footer-logo a {
+  display: inline-block;
+  /* border: 2px solid red; */
+  margin-bottom: 3rem;
+}
+
+.footer-logo img {
+  width: 5rem;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul,
+a:hover {
+  color: var(--Strong-Cyan);
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-icon:hover {
+  fill: var(--Strong-Cyan);
+}
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  main {
+    min-width: 60rem;
+    width: 80%;
+    max-width: 120rem;
+  }
+
+  header {
+    background-image: url(images/bg-header-desktop.png);
+    height: 18rem;
+    /* border: 2px solid red; */
+  }
+
+  header img {
+    width: 8rem;
+  }
+
+  .first-text {
+    padding: 0 28rem;
+  }
+
+  .button-section {
+    flex-direction: row;
+  }
+
+  .button-section button {
+    padding: 1rem 2.5rem;
+  }
+
+  .second-text {
+    padding: 0 28rem;
+  }
+
+  .desktop {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    gap: 4rem;
+  }
+
+  .desktop-part img {
+    width: 34rem;
+  }
+
+  .text-part {
+    margin-top: 1rem;
+  }
+
+  .quick-text {
+    padding: 0 20rem 0 0;
+  }
+
+  .access-text {
+    padding: 0 28rem;
+  }
+
+  .tablet img {
+    width: 34rem;
+  }
+
+  .workflow-text {
+    font-size: 1rem;
+  }
+
+  .scroll-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .extra {
+    padding: 0 8rem;
+    font-size: 1rem;
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .last-section-text {
+    /* font-size: 1rem; */
+    padding: 0 24rem;
+  }
+
+  footer {
+    display: flex;
+    gap: 8rem;
+    align-items: start;
+    justify-content: start;
+  }
+
+  ul,
+  a {
+    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: start;
+    justify-content: start;
+    gap: 0;
+    padding: 0;
+    column-gap: 2rem;
+  }
+
+  ul {
+    width: 60rem;
+  }
+
+  .list_child:nth-child(2) {
+    grid-row: 2/3;
+  }
+
+  .list_child:nth-child(5) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 4rem;
+    justify-content: center;
+  }
+
+  .footer-logo a img {
+    width: 3rem;
+    margin-left: 5rem;
+  }
+}
