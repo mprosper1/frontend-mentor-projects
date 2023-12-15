@@ -18,3 +18,4 @@ Below is the list of all challenges, hosted in github
 - [single-price-grid-component](https://mprosper1.github.io/frontend-mentor-projects/single-price-grid-component/)
 - [four-card-feature-section](https://mprosper1.github.io/frontend-mentor-projects/four-card-feature-section/)
 - [social-proof-section-master](https://mprosper1.github.io/frontend-mentor-projects/social-proof-section-master/)
+- [clipboard-landing-page](https://mprosper1.github.io/frontend-mentor-projects/clipboard-landing-page/)
