@@ -36,6 +36,8 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  
 }
 
 body {
@@ -43,7 +45,6 @@ body {
   font-size: 1.6rem;
   text-align: center;
   font-family: var(--font-family-2);
-  scroll-behavior: smooth;
 }
 
 img {
