@@ -67,7 +67,7 @@ body {
 }
 
 .img_container {
-  background-image: url(assets/images/illustration-article.svg);
+  background-image: url(images/illustration-article.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
