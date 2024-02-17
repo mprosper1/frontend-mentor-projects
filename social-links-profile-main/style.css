@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font-family-1: "Inter", sans-serif;
+
+  /* colors */
+  /* ### Primary */
+
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+
+  /* ## Gradients */
+
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  /* --White: hsl(0, 0%, 100%); */
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--Off-Black);
+  color: var(--White);
+}
+
+main {
+  font-family: var(--font-family-1);
+}
+
+.container {
+  width: 28rem;
+  margin: 5rem auto;
+  background-color: var(--Dark-Grey);
+  padding: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+
+.profile_photo {
+  width: 8rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.profile_photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.location {
+  font-size: 1rem;
+  color: var(--Green);
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+blockquote p {
+  color: lightgray;
+  font-size: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--Grey);
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+a:hover {
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
