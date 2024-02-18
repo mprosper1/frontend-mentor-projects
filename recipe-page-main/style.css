@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --font-family-1: "Young Serif", sans-serif;
+  --font-family-2: "Outfit", sans-serif;
+
+  /* colors */
+  /* ### Primary */
+
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+
+  /* ## Gradients */
+
+  --Light-slate-blue-background: hsl(252, 100%, 67%);
+  --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--Off-Black);
+  color: var(--Dark-Charcoal);
+}
+
+main {
+  font-family: var(--font-family-2);
+}
+
+.container {
+  width: 28rem;
+  margin: auto;
+  background-color: var(--White);
+}
+
+.header img {
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+.hero_section {
+  padding: 2.6rem;
+  padding-top: 0;
+}
+
+.heading {
+  font-family: var(--font-family-1);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.first_text {
+  font-weight: 500;
+  font-size: 1.16rem;
+  color: var(--Grey);
+  margin-bottom: 2rem;
+}
+
+.preparation_section {
+  width: 100%;
+  background-color: var(--Rose-White);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.prep_heading {
+  color: var(--Dark-Raspberry);
+  margin-bottom: 0.6rem;
+}
+
+.preparation_section ul {
+  padding: 0 2rem;
+}
+
+.preparation_section ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.ingredient_heading {
+  font-size: 1.8rem;
+  font-family: var(--font-family-1);
+  font-weight: 400;
+  color: var(--Nutmeg);
+  margin-bottom: 1rem;
+}
+
+.ingredients_section ul {
+  padding: 0 2rem;
+  line-height: 1.5;
+}
+
+.ingredients_section ul li {
+  margin-top: 0.6rem;
+}
+
+.ingredients_section {
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin-bottom: 2rem;
+  border-width: 1px;
+  border-color: #fff;
+}
+
+li::marker {
+  color: var(--Nutmeg);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.instruction_heading {
+  font-size: 1.8rem;
+  font-family: var(--font-family-1);
+  font-weight: 400;
+  color: var(--Nutmeg);
+  margin-bottom: 1rem;
+}
+
+.instruction_section ol {
+  padding-left: 3rem;
+}
+
+.instruction_section ol li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.instruction_section {
+  margin-bottom: 2rem;
+}
+
+.sub_heading {
+  font-size: 1.8rem;
+  font-family: var(--font-family-1);
+  font-weight: 400;
+  color: var(--Nutmeg);
+  margin-bottom: 1rem;
+}
+
+.second_text {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.footer_text {
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--Nutmeg);
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: var(--Eggshell);
+  }
+
+  .container {
+    margin: 5rem auto;
+    border-radius: 1rem;
+    width: 48 rem;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  .header img {
+    border-radius: 0.6rem;
+  }
+}
