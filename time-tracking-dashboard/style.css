@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Font  */
+  --font-family: "Rubik", sans-serif;
+
+  /* Primary */
+
+  --Blue: rgb(88, 71, 235);
+
+  --Work: rgb(255, 140, 102);
+  --Play: rgb(86, 194, 230);
+  --Study: rgb(255, 92, 124);
+  --Exercise: rgb(74, 207, 129);
+  --Social: hsl(264, 64%, 52%);
+  --SelfCare: rgb(241, 198, 91);
+  --Happy: rgb(255, 0, 0);
+
+  /* Neutral */
+
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: rgb(28, 31, 74);
+  --Desaturated-blue: rgb(111, 118, 200);
+  --Pale-Blue: rgb(189, 193, 255);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  background-color: var(--Very-dark-blue);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  min-width: 30rem;
+  max-width: 35rem;
+  width: 100%;
+  margin: auto;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+.profile {
+  width: 100%;
+  height: 18rem;
+  margin-bottom: 2rem;
+}
+
+.profile_content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Dark-blue);
+  border-radius: 1rem;
+}
+
+.profile_content_top {
+  width: 100%;
+  height: 70%;
+  background-color: var(--Blue);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  padding-left: 2rem;
+}
+
+.profile_content_top img {
+  width: 7rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.profile_content_bottom {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.report {
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: var(--Pale-Blue);
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.periods {
+  color: var(--Desaturated-blue);
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+}
+
+.periods:hover {
+  color: #fff;
+}
+
+.selected {
+  color: #fff;
+}
+
+.activities {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 14rem;
+  background-color: var(--work);
+  border-radius: 1rem;
+}
+
+.content_top {
+  width: 100%;
+  height: 20%;
+  text-align: end;
+  padding-right: 2rem;
+  overflow: hidden;
+}
+
+.content_top img {
+  width: 6.4rem;
+}
+
+.content_bottom {
+  width: 100%;
+  height: 80%;
+  background-color: var(--Dark-blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 3rem 2.4rem;
+  gap: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.content_bottom:hover {
+  background-color: rgb(76, 81, 138);
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.current_time {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.previous_time {
+  color: var(--Desaturated-blue);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
+  main {
+    min-width: 50rem;
+    max-width: 55rem;
+    width: 100%;
+  }
+
+  .activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .current_time {
+    font-size: 2.4rem;
+  }
+
+  .previous_time {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    min-width: 60rem;
+    max-width: 110rem;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .profile {
+    width: 24rem;
+    height: 38rem;
+    margin-right: 2rem;
+  }
+
+  .activities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .content {
+    width: 22rem;
+    height: 18rem;
+    flex-grow: 1;
+    flex-basis: 50;
+  }
+
+  .profile_content_top {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 3rem 2rem;
+  }
+
+  .name {
+    font-size: 3.4rem;
+  }
+
+  .profile_content_bottom {
+    flex-direction: column;
+    padding: 0;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 2rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .current_time {
+    font-size: 3.4rem;
+  }
+}
