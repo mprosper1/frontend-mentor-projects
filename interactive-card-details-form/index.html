@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="top">
+
+      <div class="back_card">
+        <!-- <img class="card_back_view" src="images/bg-card-back.png" alt="bg-card-back" /> -->
+        <div class="cvv">000</div>
+      </div>
+
+      <div class="front_card">
+        <!-- <img class="card_front_view" src="images/bg-card-front.png" alt="bg-card-front"> -->
+        <img src="images/card-logo.svg" alt="card-logo">
+        <h1 class="card_number">0000 0000 0000 0000 </h1>
+        <div class="name_and_date">
+          <p class="name">
+            Jane Appleseed
+          </p>
+          <div class="date">
+            <span class="month">00</span>/<span class="year">00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bottom_01">
+      <form>
+        <div class="input_name">
+          <label for="name">Cardholder Name</label>
+          <input type="text" class="input_card_name" id="name" placeholder="e.g. Jane Appleseed">
+          <p class="input_error">Can't be blank</p>
+        </div>
+
+        <div class="input_number">
+          <label for="number">Card Number</label>
+          <input type="number" max="9999999999999999" oninput="this.value = this.value.slice(0, 16);"
+            class="input_card_number" id="number" placeholder="e.g. 1234 5678 9123 0000">
+          <p class="input_error">Can't be blank</p>
+        </div>
+
+        <div class="date_and_cvc">
+          <div class="date_input">
+            <label for="date">Exp. Date (MM/YY)</label>
+            <div>
+              <input type="number" max="12" min="01" oninput="this.value = this.value.slice(0, 2);" placeholder="MM"
+                class="input_month" id="date">
+              <input type="number" max="99" oninput="this.value = this.value.slice(0, 2);" placeholder="YY"
+                class="input_year" id="date">
+            </div>
+            <p class="input_error">Can't be blank</p>
+          </div>
+
+          <div class="cvc">
+            <label for="CVC">CVC</label>
+            <input type="number" max="999" oninput="this.value = this.value.slice(0, 3);" class="input_cvv_number"
+              id="CVC" placeholder="e.g. 123">
+            <p class="input_error">Can't be blank</p>
+          </div>
+        </div>
+
+        <button class="btn" id="btn_confirm">Confirm</button>
+      </form>
+    </div>
+    <div class="bottom_02 hide">
+      <img src="images/icon-complete.svg" alt="icon-complete">
+      <h2>Thank You!</h2>
+      <p class="complete_text">We've added your card details</p>
+      <button class="btn" id="btn_continue">Continue</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
